@@ -6,7 +6,7 @@ print('Not existing value:', my_dict.get('Alex'))
 my_dict.update({'Eva': 2000, 'Egor': 2001})
 print('Deleted value:', my_dict.pop('Klara'))
 print('Modified dictionary:', my_dict)
-# работа со множеством
+# работа с множеством
 print('')
 my_set = {1, 2, 3, 1, 2, 3, 'fool'}
 print('Set:', my_set)
