@@ -9,6 +9,6 @@ for i in numbers:
         else:
             primes.append(i)
             break
-print(primes)
-print(not_primes)
+print('Primes:', primes)
+print('Not primes:', not_primes)
 
