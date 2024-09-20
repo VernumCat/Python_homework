@@ -4,9 +4,9 @@ not_primes = []
 for i in numbers[1:]:
     for x in numbers[1:i]:
         if i % x == 0 and i != x:
-            if i not in not_primes:
-                not_primes.append(i)
-    if i not in not_primes and i not in primes:
+            not_primes.append(i)
+            break
+    if i not in not_primes:
         primes.append(i)
 print('Primes:', primes)
 print('Not primes:', not_primes)
