@@ -1,14 +1,11 @@
-from main import recipient_domen
-
-
 def send_email(message, recipient, *, sender='university.help@gmail.com'):
     recipient_domen = False
     sender_domen = False
-    if recipient.endswith('.ru') == True or recipient.endswith('.com') == True or recipient.endswith('.net') == True:
+    if (recipient.endswith('.ru') == True or recipient.endswith('.com') == True or recipient.endswith('.net') == True):
         recipient_domen = True
-    if sender.endswith('.ru') == True or sender.endswith('.com') == True or sender.endswith('net') == True:
+    if (sender.endswith('.ru') == True or sender.endswith('.com') == True or sender.endswith('net') == True):
         sender_domen = True
-    if recipient.find('@') == -1 or sender.find('@') == -1 or recipient_domen != True or sender_domen != True:
+    if (recipient.find('@') == -1 or sender.find('@') == -1 or recipient_domen != True or sender_domen != True):
         print(f'Невозможно отправить письмо с адреса {sender} на адрес {recipient}!')
     elif recipient == sender:
         print('Нельзя отправить письмо самому себе!')
